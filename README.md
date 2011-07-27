@@ -12,4 +12,4 @@ TBD when it actually works ;)
 
 ## Author
 
-Łukasz "lqc" Rekucki <lrekucki@gmail.com>
+Łukasz "lqc" Rekucki (<lrekucki+github@gmail.com>)
