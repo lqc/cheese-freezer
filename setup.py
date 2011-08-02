@@ -7,7 +7,7 @@ def read(fname):
 
 setup(
     name = "cheese-freezer",
-    version = "0.0.2",
+    version = "0.0.3",
     author = u"Łukasz Rekucki",
     author_email = "lrekucki@gmail.com",
     description = ("Upload helper for your local PyPI mirror"),
