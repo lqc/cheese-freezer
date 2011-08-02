@@ -1,18 +1,24 @@
+==============
 Cheese Freezer
 ==============
 
-## About
+About
+----------
 
 Cheese Freezer helps you freeze your project's requirements by fetching them (through PIP) 
 and uploading back to a cheese shop of your choice (see http://github.com/disqus/chishop).
 
-## Install
+Install
+---------
+
+::
 
     $ pip install cheese-freezer
 
-## Usage
+Usage
+---------
 
-First you need to define an alternative shop in your .pypirc. For example:
+First you need to define an alternative shop in your .pypirc. For example::
 
     # ~/.pypirc
     [distutils]
@@ -23,12 +29,13 @@ First you need to define an alternative shop in your .pypirc. For example:
     username = my_username
     passsword = my_password
 
-Then just run:
+Then just run::
 
     $ cheese-freezer myshop requirements.pip
 
 and watch :)
 
-## Author
+Author
+----------
 
-Łukasz "lqc" Rekucki (<lrekucki+github@gmail.com>)
+Lukasz "lqc" Rekucki (<lrekucki+github@gmail.com>)

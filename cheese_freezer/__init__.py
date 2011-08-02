@@ -1,4 +1,6 @@
 from pip import req as pip_req, index, log as pip_log
+from pip.vcs import (git, mercurial, subversion, bazaar)
+
 import argparse
 import tempfile
 import shutil
@@ -20,7 +22,7 @@ def parse_arguments():
 
 
 def upload_project(chishop, build_dir):
-    proc = subprocess.Popen(["python", "setup.py", "register", "-r", chishop, "sdist", "upload", "-r", chishop], cwd=build_dist)
+    proc = subprocess.Popen(["python", "setup.py", "register", "-r", chishop, "sdist", "upload", "-r", chishop], cwd=build_dir)
     proc.wait()
 
 def main():

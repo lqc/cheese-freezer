@@ -3,11 +3,11 @@ import os
 from setuptools import setup
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+    return open(os.path.join(os.path.dirname(__file__), fname), "rb").read().decode('utf-8')
 
 setup(
     name = "cheese-freezer",
-    version = "0.0.1",
+    version = "0.0.2",
     author = u"Łukasz Rekucki",
     author_email = "lrekucki@gmail.com",
     description = ("Upload helper for your local PyPI mirror"),
@@ -15,7 +15,7 @@ setup(
     keywords = "pypi chishop upload mirror",
     url = "http://github.com/lqc/cheese-freezer/",
     packages=["cheese_freezer"],
-    long_description=read('README.md'),
+    long_description=read('README.rst'),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Console",
